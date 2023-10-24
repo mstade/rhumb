@@ -1,5 +1,5 @@
-var test  = require('tape')
-  , rhumb = require('../../lib/rhumb')
+import test from 'tape'
+import {rhumb} from '../../src/rhumb.js'
 
 test("Routing should pass query string params to callback", function(t) {
   var router = rhumb.create()

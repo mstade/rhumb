@@ -3,8 +3,7 @@ SHELL := /bin/bash
 
 build: node_modules src/rhumb.js
 	echo "--> Building project ..."
-	mkdir -p lib
-	browserify src/rhumb.js --standalone rhumb -o lib/rhumb.js
+	# No build process in an ESM world, let's see how long this lasts...
 
 test: build
 	echo "--> Running tests ..."
@@ -15,7 +14,7 @@ node_modules: package.json
 	npm install
 
 clean:
-	rm -rf lib node_modules
+	rm -rf dist node_modules
 
 all: clean build test
 

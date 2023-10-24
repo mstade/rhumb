@@ -1,5 +1,5 @@
-var test  = require('tape')
-  , rhumb = require('../../lib/rhumb')
+import test from 'tape'
+import {rhumb} from '../../src/rhumb.js'
 
 test("Parsing should find a partial part with fixed left and right", function(t) {
   var out = rhumb._parse("/left{page}right")

@@ -1,5 +1,5 @@
-var test  = require('tape')
-  , rhumb = require('../../lib/rhumb')
+import test from 'tape'
+import {rhumb} from '../../src/rhumb.js'
 
 test("Routing should match /woo/wee over /woo/{wee}", function(t) {
   t.plan(1)

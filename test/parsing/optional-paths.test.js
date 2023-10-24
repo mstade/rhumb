@@ -1,5 +1,5 @@
-var test  = require('tape')
-  , rhumb = require('../../lib/rhumb')
+import test from 'tape'
+import {rhumb} from '../../src/rhumb.js'
 
 test("Parsing should find optional part at end of path", function(t){
   var out = rhumb._parse("/one/two(/three)")

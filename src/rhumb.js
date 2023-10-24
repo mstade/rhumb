@@ -1,3 +1,10 @@
+export { rhumb, rhumb as default }
+
+const rhumb = create()
+rhumb.create = create
+rhumb._parse = parse
+rhumb._findInTree = findIn
+
 function findIn(parts, tree){
   var params = {}
 
@@ -262,10 +269,3 @@ function parse(ptn){
   
   return parseOptional(ptn)
 }
-
-var rhumb = create()
-rhumb.create = create
-rhumb._parse = parse
-rhumb._findInTree = findIn
-
-module.exports = rhumb

@@ -1,24 +1,25 @@
 {
   "name": "rhumb",
-  "version": "0.3.1",
+  "type": "module",
+  "version": "1.0.0",
   "description": "URL routing in js",
-  "main": "lib/rhumb.js",
+  "exports": {
+    "import": "./src/rhumb.js"
+  },
   "devDependencies": {
-    "browserify": "^11.1.0",
-    "faucet": "0.0.1",
-    "tape": "^4.2.0"
+    "faucet": "0.0.4",
+    "tape": "^5.7.2"
   },
   "scripts": {
-    "test": "make test",
-    "preversion": "make all"
+    "test": "make test"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/sammyt/rhumb.git"
   },
-  "author": "Samuel Williams <sam@ziazoo.co.uk> (http://www.ziazoo.co.uk)",
+  "author": "Samuel Williams <sam@ziazoo.co.uk> (https://www.ziazoo.co.uk)",
   "contributors": [
-    "Marcus Stade <marcus@stade.se> (http://madebystade.se)"
+    "Marcus Stade <marcus@stade.se> (https://madebystade.com)"
   ],
   "license": "MIT",
   "bugs": {
